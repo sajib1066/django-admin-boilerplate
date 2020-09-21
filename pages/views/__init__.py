@@ -3,8 +3,12 @@ from .dashboard import (
     AnalyticalPageView
 )
 
+from .authentication import (
+    Login1View
+)
 
 # add function in package
 __all__ = [
-    HomePageView, AnalyticalPageView
+    HomePageView, AnalyticalPageView,
+    Login1View
 ]
