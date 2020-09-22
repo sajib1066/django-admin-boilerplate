@@ -19,14 +19,15 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # dashboard
+    # home page
     path('', TemplateView.as_view(template_name='index.html'), name='home'),
+    # dashboard page
     path(
         'analytical/',
         TemplateView.as_view(template_name='dashboard/analytical.html'),
         name='analytical'
     ),
-    # authentication
+    # authentication page
     path(
         'login1/',
         TemplateView.as_view(template_name='authentication/login1.html'),
