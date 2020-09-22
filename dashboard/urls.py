@@ -14,9 +14,22 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('pages.urls')),
+    # dashboard
+    path('', TemplateView.as_view(template_name='index.html'), name='home'),
+    path(
+        'analytical/',
+        TemplateView.as_view(template_name='dashboard/analytical.html'),
+        name='analytical'
+    ),
+    # authentication
+    path(
+        'login1/',
+        TemplateView.as_view(template_name='authentication/login1.html'),
+        name='login1'
+    )
 ]
