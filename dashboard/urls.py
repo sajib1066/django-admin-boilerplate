@@ -29,13 +29,13 @@ urlpatterns = [
     ),
     # authentication page
     path(
-        'login1/',
-        TemplateView.as_view(template_name='authentication/login1.html'),
-        name='login1'
+        'login/',
+        TemplateView.as_view(template_name='authentication/login.html'),
+        name='login'
     ),
     path(
-        'register1/',
-        TemplateView.as_view(template_name='authentication/register1.html'),
-        name='register1'
+        'register/',
+        TemplateView.as_view(template_name='authentication/register.html'),
+        name='register'
     )
 ]
