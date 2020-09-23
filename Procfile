@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:8000 dashboard.wsgi
+web: gunicorn dashboard.wsgi --log-file -
