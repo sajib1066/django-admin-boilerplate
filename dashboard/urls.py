@@ -36,5 +36,11 @@ urlpatterns = [
         'register/',
         TemplateView.as_view(template_name='authentication/register.html'),
         name='register'
-    )
+    ),
+    # forms page
+    path(
+        'form-basic/',
+        TemplateView.as_view(template_name='forms/form-layout/form-basic.html'),
+        name='form-basic'
+    ),
 ]
