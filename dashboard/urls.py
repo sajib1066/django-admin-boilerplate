@@ -53,4 +53,10 @@ urlpatterns = [
         TemplateView.as_view(template_name='forms/form-validation/custom-validation.html'),
         name='custom-validation'
     ),
+    # tables
+    path(
+        'table-basic/',
+        TemplateView.as_view(template_name='tables/bootstrap/table-basic.html'),
+        name='table-basic'
+    ),
 ]
