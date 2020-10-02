@@ -43,4 +43,9 @@ urlpatterns = [
         TemplateView.as_view(template_name='forms/form-layout/form-basic.html'),
         name='form-basic'
     ),
+    path(
+        'bootstrap-validation/',
+        TemplateView.as_view(template_name='forms/form-validation/bootstrap-validation.html'),
+        name='bootstrap-validation'
+    ),
 ]
