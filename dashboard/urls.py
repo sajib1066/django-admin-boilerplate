@@ -59,4 +59,9 @@ urlpatterns = [
         TemplateView.as_view(template_name='tables/bootstrap/table-basic.html'),
         name='table-basic'
     ),
+    path(
+        'datatable-basic/',
+        TemplateView.as_view(template_name='tables/datatables/datatable-basic.html'),
+        name='datatable-basic'
+    ),
 ]
